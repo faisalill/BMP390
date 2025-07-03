@@ -1,0 +1,24 @@
+#######################################
+# Keywords for BMP390 Library
+#######################################
+
+# Classes
+BMP390          KEYWORD1
+
+# Functions
+BMP390.BMP390           KEYWORD2
+BMP390.get_bmp_values   KEYWORD2
+BMP390.init_bmp390      KEYWORD2
+
+# Structs
+bmp3_data       KEYWORD1
+
+# Constants (from BMP390.h)
+BMP390_I2C_ADDR_SEC     LITERAL1
+BMP3_REG_CHIP_ID        LITERAL1
+BMP3_REG_PWR_CTRL       LITERAL1
+BMP3_MODE_NORMAL        LITERAL1
+BMP3_OVERSAMPLING_4X    LITERAL1
+BMP3_ODR_25_HZ          LITERAL1
+BMP3_IIR_FILTER_DISABLE LITERAL1
+BMP3_SOFT_RESET_CMD     LITERAL1

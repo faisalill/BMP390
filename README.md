@@ -79,8 +79,9 @@ void setup() {
   while (!Serial && millis() < 5000); 
 
   Serial.println("Initializing BMP390 sensor...");
-  if (bmp.init_bmp390()) {
-    Serial.println("BMP390 Initialization Successful!");
+  bmp3_data bmp_data = bmp.get_bmp_values();
+  if (bmp_data.success) {
+    Serial.println("BMP390 Initialized Successfully!");
   } else {
     Serial.println("BMP390 Initialization Failed! Please check wiring and sensor connection.");
   }
